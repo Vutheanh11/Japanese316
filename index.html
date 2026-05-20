@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第1課 — 新しい出会い</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div>
+      <div class="lesson-tag">JPD316 · Bài học</div>
+      <h1>第1課 — 新しい出会い</h1>
+      <div class="sub">Cuộc gặp gỡ mới · Từ vựng & Ngữ pháp</div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">90+</div><div class="stat-lbl">Từ vựng</div></div>
+    <div class="stat"><div class="stat-num">12</div><div class="stat-lbl">Ngữ pháp</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Chủ đề</div></div>
+  </div>
+</header>
+
+<nav>
+  <button class="active" onclick="showTab('vocab')">📖 Từ vựng</button>
+  <button onclick="showTab('grammar')">文 Ngữ pháp</button>
+  <button onclick="showTab('summary')">📋 Tổng hợp</button>
+  <button onclick="showTab('tenses')">🔄 Ôn các thì</button>
+  <button onclick="showTab('kanji')">字 Kanji</button>
+</nav>
+
+<main>
+
+<!-- ===== VOCAB TAB ===== -->
+<div id="tab-vocab" class="section active">
+  <div class="search-wrap" style="margin-top:1.5rem">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="vocab-search" placeholder="Tìm từ Nhật, đọc hoặc nghĩa tiếng Việt..." oninput="filterVocab()">
+  </div>
+
+  <div id="vocab-all">
+
+  <!-- PART 1 -->
+  <div class="part-heading">
+    <span class="part-badge">Part 1</span>
+    <h2>掲示板 · Thông báo & Sự kiện</h2>
+    <div class="part-line"></div>
+  </div>
+  <div class="vocab-grid" id="vg-p1">
+    <div class="vocab-card"><div class="vocab-jp">掲示板</div><div class="vocab-read">けいじばん</div><div class="vocab-vi">Bảng thông báo</div></div>
+    <div class="vocab-card"><div class="vocab-jp">当日</div><div class="vocab-read">とうじつ</div><div class="vocab-vi">Ngày hôm đó / ngày diễn ra</div></div>
+    <div class="vocab-card"><div class="vocab-jp">交流する</div><div class="vocab-read">こうりゅうする</div><div class="vocab-vi">Giao lưu</div></div>
+    <div class="vocab-card"><div class="vocab-jp">協会</div><div class="vocab-read">きょうかい</div><div class="vocab-vi">Hiệp hội</div></div>
+    <div class="vocab-card"><div class="vocab-jp">広場</div><div class="vocab-read">ひろば</div><div class="vocab-vi">Quảng trường</div></div>
+    <div class="vocab-card"><div class="vocab-jp">支払う</div><div class="vocab-read">しはらう</div><div class="vocab-vi">Thanh toán</div></div>
+    <div class="vocab-card"><div class="vocab-jp">雨天</div><div class="vocab-read">うてん</div><div class="vocab-vi">Trời mưa</div></div>
+    <div class="vocab-card"><div class="vocab-jp">就職活動</div><div class="vocab-read">しゅうしょくかつどう</div><div class="vocab-vi">Hoạt động tìm việc làm</div></div>
+    <div class="vocab-card"><div class="vocab-jp">重要な</div><div class="vocab-read">じゅうような</div><div class="vocab-vi">Quan trọng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">交流会</div><div class="vocab-read">こうりゅうかい</div><div class="vocab-vi">Buổi giao lưu</div></div>
+    <div class="vocab-card"><div class="vocab-jp">先着</div><div class="vocab-read">せんちゃく</div><div class="vocab-vi">Đến trước / người đến trước</div></div>
+    <div class="vocab-card"><div class="vocab-jp">人数</div><div class="vocab-read">にんずう</div><div class="vocab-vi">Số người</div></div>
+    <div class="vocab-card"><div class="vocab-jp">日時</div><div class="vocab-read">にちじ</div><div class="vocab-vi">Ngày giờ</div></div>
+    <div class="vocab-card"><div class="vocab-jp">高まる</div><div class="vocab-read">たかまる</div><div class="vocab-vi">Tăng lên / nâng cao</div></div>
+    <div class="vocab-card"><div class="vocab-jp">年々</div><div class="vocab-read">ねんねん</div><div class="vocab-vi">Hằng năm / ngày càng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">評価する</div><div class="vocab-read">ひょうかする</div><div class="vocab-vi">Đánh giá</div></div>
+    <div class="vocab-card"><div class="vocab-jp">金額</div><div class="vocab-read">きんがく</div><div class="vocab-vi">Số tiền</div></div>
+    <div class="vocab-card"><div class="vocab-jp">半額</div><div class="vocab-read">はんがく</div><div class="vocab-vi">Nửa giá</div></div>
+    <div class="vocab-card"><div class="vocab-jp">以前</div><div class="vocab-read">いぜん</div><div class="vocab-vi">Trước đây</div></div>
+    <div class="vocab-card"><div class="vocab-jp">定員</div><div class="vocab-read">ていいん</div><div class="vocab-vi">Số lượng giới hạn</div></div>
+    <div class="vocab-card"><div class="vocab-jp">お知らせ</div><div class="vocab-read">おしらせ</div><div class="vocab-vi">Thông báo</div></div>
+    <div class="vocab-card"><div class="vocab-jp">音を立てる</div><div class="vocab-read">おとをたてる</div><div class="vocab-vi">Gây ra tiếng động</div></div>
+    <div class="vocab-card"><div class="vocab-jp">工事</div><div class="vocab-read">こうじ</div><div class="vocab-vi">Công trình xây dựng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">領収書</div><div class="vocab-read">りょうしゅうしょ</div><div class="vocab-vi">Biên lai / hóa đơn</div></div>
+    <div class="vocab-card"><div class="vocab-jp">完成する</div><div class="vocab-read">かんせいする</div><div class="vocab-vi">Hoàn thành</div></div>
+    <div class="vocab-card"><div class="vocab-jp">完成品</div><div class="vocab-read">かんせいひん</div><div class="vocab-vi">Sản phẩm hoàn chỉnh</div></div>
+    <div class="vocab-card"><div class="vocab-jp">ウェルカム</div><div class="vocab-read"></div><div class="vocab-vi">Welcome / chào mừng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">すっきり</div><div class="vocab-read"></div><div class="vocab-vi">Sảng khoái / gọn gàng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">サインする</div><div class="vocab-read"></div><div class="vocab-vi">Ký tên</div></div>
+    <div class="vocab-card"><div class="vocab-jp">確か</div><div class="vocab-read">たしか</div><div class="vocab-vi">Chắc là / hình như</div></div>
+    <div class="vocab-card"><div class="vocab-jp">プリン</div><div class="vocab-read"></div><div class="vocab-vi">Bánh flan / pudding</div></div>
+    <div class="vocab-card"><div class="vocab-jp">窓口</div><div class="vocab-read">まどぐち</div><div class="vocab-vi">Quầy giao dịch / tiếp nhận</div></div>
+    <div class="vocab-card"><div class="vocab-jp">事前予約</div><div class="vocab-read">じぜんよやく</div><div class="vocab-vi">Đặt trước</div></div>
+    <div class="vocab-card"><div class="vocab-jp">締め切り</div><div class="vocab-read">しめきり</div><div class="vocab-vi">Hạn chót</div></div>
+    <div class="vocab-card"><div class="vocab-jp">参加費</div><div class="vocab-read">さんかひ</div><div class="vocab-vi">Phí tham dự</div></div>
+    <div class="vocab-card"><div class="vocab-jp">隣</div><div class="vocab-read">となり</div><div class="vocab-vi">Bên cạnh / hàng xóm</div></div>
+    <div class="vocab-card"><div class="vocab-jp">行う</div><div class="vocab-read">おこなう</div><div class="vocab-vi">Thực hiện / tiến hành</div></div>
+    <div class="vocab-card"><div class="vocab-jp">持参する</div><div class="vocab-read">じさんする</div><div class="vocab-vi">Mang theo</div></div>
+    <div class="vocab-card"><div class="vocab-jp">主催する</div><div class="vocab-read">しゅさいする</div><div class="vocab-vi">Tổ chức / chủ trì</div></div>
+    <div class="vocab-card"><div class="vocab-jp">新た（な）</div><div class="vocab-read">あらたな</div><div class="vocab-vi">Mới / mới mẻ</div></div>
+    <div class="vocab-card"><div class="vocab-jp">家賃</div><div class="vocab-read">やちん</div><div class="vocab-vi">Tiền thuê nhà</div></div>
+  </div>
+
+  <!-- PART 2 -->
+  <div class="part-heading">
+    <span class="part-badge">Part 2</span>
+    <h2>誘う · Rủ rê & Cơ hội</h2>
+    <div class="part-line"></div>
+  </div>
+  <div class="vocab-grid">
+    <div class="vocab-card"><div class="vocab-jp">気分</div><div class="vocab-read">きぶん</div><div class="vocab-vi">Tâm trạng / cảm giác</div></div>
+    <div class="vocab-card"><div class="vocab-jp">以上</div><div class="vocab-read">いじょう</div><div class="vocab-vi">Trở lên / hơn</div></div>
+    <div class="vocab-card"><div class="vocab-jp">以降</div><div class="vocab-read">いこう</div><div class="vocab-vi">Từ đây trở đi / kể từ sau</div></div>
+    <div class="vocab-card"><div class="vocab-jp">以下</div><div class="vocab-read">いか</div><div class="vocab-vi">Trở xuống / dưới</div></div>
+    <div class="vocab-card"><div class="vocab-jp">機会</div><div class="vocab-read">きかい</div><div class="vocab-vi">Cơ hội</div></div>
+    <div class="vocab-card"><div class="vocab-jp">機械</div><div class="vocab-read">きかい</div><div class="vocab-vi">Máy móc</div></div>
+    <div class="vocab-card"><div class="vocab-jp">役に立つ</div><div class="vocab-read">やくにたつ</div><div class="vocab-vi">Có ích / hữu ích</div></div>
+    <div class="vocab-card"><div class="vocab-jp">美術館</div><div class="vocab-read">びじゅつかん</div><div class="vocab-vi">Bảo tàng mỹ thuật</div></div>
+    <div class="vocab-card"><div class="vocab-jp">残念</div><div class="vocab-read">ざんねん</div><div class="vocab-vi">Tiếc / đáng tiếc</div></div>
+    <div class="vocab-card"><div class="vocab-jp">情報</div><div class="vocab-read">じょうほう</div><div class="vocab-vi">Thông tin</div></div>
+    <div class="vocab-card"><div class="vocab-jp">興味</div><div class="vocab-read">きょうみ</div><div class="vocab-vi">Sự quan tâm / hứng thú</div></div>
+    <div class="vocab-card"><div class="vocab-jp">負ける</div><div class="vocab-read">まける</div><div class="vocab-vi">Thua</div></div>
+    <div class="vocab-card"><div class="vocab-jp">勝つ</div><div class="vocab-read">かつ</div><div class="vocab-vi">Thắng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">誘う</div><div class="vocab-read">さそう</div><div class="vocab-vi">Rủ / mời</div></div>
+    <div class="vocab-card"><div class="vocab-jp">遠慮</div><div class="vocab-read">えんりょ</div><div class="vocab-vi">Ngại ngùng / khách sáo</div></div>
+    <div class="vocab-card"><div class="vocab-jp">探す</div><div class="vocab-read">さがす</div><div class="vocab-vi">Tìm kiếm</div></div>
+    <div class="vocab-card"><div class="vocab-jp">決める</div><div class="vocab-read">きめる</div><div class="vocab-vi">Quyết định</div></div>
+  </div>
+
+  <!-- PART 3 -->
+  <div class="part-heading">
+    <span class="part-badge">Part 3</span>
+    <h2>天気予報 · Thời tiết</h2>
+    <div class="part-line"></div>
+  </div>
+  <div class="vocab-grid">
+    <div class="vocab-card"><div class="vocab-jp">天気予報</div><div class="vocab-read">てんきよほう</div><div class="vocab-vi">Dự báo thời tiết</div></div>
+    <div class="vocab-card"><div class="vocab-jp">汗ばむ</div><div class="vocab-read">あせばむ</div><div class="vocab-vi">Đổ mồ hôi nhẹ</div></div>
+    <div class="vocab-card"><div class="vocab-jp">気象</div><div class="vocab-read">きしょう</div><div class="vocab-vi">Khí tượng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">青空</div><div class="vocab-read">あおぞら</div><div class="vocab-vi">Bầu trời xanh</div></div>
+    <div class="vocab-card"><div class="vocab-jp">広がる</div><div class="vocab-read">ひろがる</div><div class="vocab-vi">Lan rộng / trải rộng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">陽気</div><div class="vocab-read">ようき</div><div class="vocab-vi">Thời tiết ấm áp / vui vẻ</div></div>
+    <div class="vocab-card"><div class="vocab-jp">洗濯日和</div><div class="vocab-read">せんたくびより</div><div class="vocab-vi">Thời tiết đẹp để phơi đồ</div></div>
+    <div class="vocab-card"><div class="vocab-jp">星空</div><div class="vocab-read">ほしぞら</div><div class="vocab-vi">Bầu trời đầy sao</div></div>
+    <div class="vocab-card"><div class="vocab-jp">気象予報士</div><div class="vocab-read">きしょうよほうし</div><div class="vocab-vi">Chuyên viên dự báo thời tiết</div></div>
+    <div class="vocab-card"><div class="vocab-jp">日中</div><div class="vocab-read">にっちゅう</div><div class="vocab-vi">Ban ngày</div></div>
+    <div class="vocab-card"><div class="vocab-jp">見込み</div><div class="vocab-read">みこみ</div><div class="vocab-vi">Dự kiến / triển vọng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">午前中</div><div class="vocab-read">ごぜんちゅう</div><div class="vocab-vi">Buổi sáng</div></div>
+    <div class="vocab-card"><div class="vocab-jp">前日</div><div class="vocab-read">ぜんじつ</div><div class="vocab-vi">Ngày hôm trước</div></div>
+    <div class="vocab-card"><div class="vocab-jp">予想する</div><div class="vocab-read">よそうする</div><div class="vocab-vi">Dự đoán</div></div>
+    <div class="vocab-card"><div class="vocab-jp">平年並み</div><div class="vocab-read">へいねんなみ</div><div class="vocab-vi">Mức trung bình hằng năm</div></div>
+    <div class="vocab-card"><div class="vocab-jp">折り畳み傘</div><div class="vocab-read">おりたたみかさ</div><div class="vocab-vi">Ô gấp</div></div>
+    <div class="vocab-card"><div class="vocab-jp">肌寒い</div><div class="vocab-read">はださむい</div><div class="vocab-vi">Hơi lạnh / se lạnh</div></div>
+    <div class="vocab-card"><div class="vocab-jp">連休</div><div class="vocab-read">れんきゅう</div><div class="vocab-vi">Kỳ nghỉ liên tiếp</div></div>
+    <div class="vocab-card"><div class="vocab-jp">天気が回復する</div><div class="vocab-read">かいふくする</div><div class="vocab-vi">Thời tiết phục hồi / đẹp lại</div></div>
+    <div class="vocab-card"><div class="vocab-jp">天気が崩れる</div><div class="vocab-read">くずれる</div><div class="vocab-vi">Thời tiết xấu đi</div></div>
+    <div class="vocab-card"><div class="vocab-jp">関東</div><div class="vocab-read">かんとう</div><div class="vocab-vi">Vùng Kanto</div></div>
+    <div class="vocab-card"><div class="vocab-jp">各地</div><div class="vocab-read">かくち</div><div class="vocab-vi">Các nơi / khắp nơi</div></div>
+    <div class="vocab-card"><div class="vocab-jp">気温</div><div class="vocab-read">きおん</div><div class="vocab-vi">Nhiệt độ không khí</div></div>
+    <div class="vocab-card"><div class="vocab-jp">梅雨</div><div class="vocab-read">つゆ</div><div class="vocab-vi">Mùa mưa / mưa phùn</div></div>
+    <div class="vocab-card"><div class="vocab-jp">冷え込む</div><div class="vocab-read">ひえこむ</div><div class="vocab-vi">Lạnh buốt / nhiệt độ xuống thấp</div></div>
+    <div class="vocab-card"><div class="vocab-jp">迷惑</div><div class="vocab-read">めいわく</div><div class="vocab-vi">Phiền hà / gây rắc rối</div></div>
+    <div class="vocab-card"><div class="vocab-jp">夏日</div><div class="vocab-read">なつび</div><div class="vocab-vi">Ngày hè (trên 25°C)</div></div>
+    <div class="vocab-card"><div class="vocab-jp">熱帯夜</div><div class="vocab-read">ねったいや</div><div class="vocab-vi">Đêm nhiệt đới (trên 25°C)</div></div>
+    <div class="vocab-card"><div class="vocab-jp">秋晴れ</div><div class="vocab-read">あきばれ</div><div class="vocab-vi">Trời thu trong xanh</div></div>
+    <div class="vocab-card"><div class="vocab-jp">蒸し暑い</div><div class="vocab-read">むしあつい</div><div class="vocab-vi">Nóng ẩm / oi bức</div></div>
+    <div class="vocab-card"><div class="vocab-jp">日差しが強い</div><div class="vocab-read">ひざしがつよい</div><div class="vocab-vi">Nắng gay gắt</div></div>
+    <div class="vocab-card"><div class="vocab-jp">行楽日和</div><div class="vocab-read">こうらくびより</div><div class="vocab-vi">Thời tiết đẹp để đi chơi</div></div>
+    <div class="vocab-card"><div class="vocab-jp">ぽかぽか</div><div class="vocab-read"></div><div class="vocab-vi">Ấm áp (dễ chịu)</div></div>
+    <div class="vocab-card"><div class="vocab-jp">じめじめ</div><div class="vocab-read"></div><div class="vocab-vi">Ẩm ướt / ngột ngạt</div></div>
+    <div class="vocab-card"><div class="vocab-jp">からっと</div><div class="vocab-read"></div><div class="vocab-vi">Khô ráo / se se</div></div>
+    <div class="vocab-card"><div class="vocab-jp">混む</div><div class="vocab-read">こむ</div><div class="vocab-vi">Đông / tắc nghẽn</div></div>
+    <div class="vocab-card"><div class="vocab-jp">上着</div><div class="vocab-read">うわぎ</div><div class="vocab-vi">Áo khoác</div></div>
+    <div class="vocab-card"><div class="vocab-jp">助かる</div><div class="vocab-read">たすかる</div><div class="vocab-vi">Được cứu / cảm thấy nhẹ nhõm</div></div>
+    <div class="vocab-card"><div class="vocab-jp">感じる</div><div class="vocab-read">かんじる</div><div class="vocab-vi">Cảm thấy</div></div>
+  </div>
+
+  <!-- PART 4 -->
+  <div class="part-heading">
+    <span class="part-badge">Part 4</span>
+    <h2>自己紹介 · Tự giới thiệu & Tính cách</h2>
+    <div class="part-line"></div>
+  </div>
+
+  <div class="personality-section">
+    <div class="personality-label">Từ chung</div>
+    <div class="vocab-grid">
+      <div class="vocab-card"><div class="vocab-jp">実は</div><div class="vocab-read">じつは</div><div class="vocab-vi">Thực ra / thật ra</div></div>
+      <div class="vocab-card"><div class="vocab-jp">行動</div><div class="vocab-read">こうどう</div><div class="vocab-vi">Hành động</div></div>
+      <div class="vocab-card"><div class="vocab-jp">実際</div><div class="vocab-read">じっさい</div><div class="vocab-vi">Thực tế</div></div>
+      <div class="vocab-card"><div class="vocab-jp">怒る</div><div class="vocab-read">おこる</div><div class="vocab-vi">Tức giận / nổi giận</div></div>
+      <div class="vocab-card"><div class="vocab-jp">気が短い</div><div class="vocab-read">きがみじかい</div><div class="vocab-vi">Nóng tính / thiếu kiên nhẫn</div></div>
+      <div class="vocab-card"><div class="vocab-jp">欠点</div><div class="vocab-read">けってん</div><div class="vocab-vi">Khuyết điểm</div></div>
+      <div class="vocab-card"><div class="vocab-jp">周り</div><div class="vocab-read">まわり</div><div class="vocab-vi">Xung quanh</div></div>
+      <div class="vocab-card"><div class="vocab-jp">性格</div><div class="vocab-read">せいかく</div><div class="vocab-vi">Tính cách</div></div>
+      <div class="vocab-card"><div class="vocab-jp">交換する</div><div class="vocab-read">こうかんする</div><div class="vocab-vi">Trao đổi / đổi</div></div>
+    </div>
+  </div>
+
+  <div class="personality-section">
+    <div class="personality-label positive">✨ Tính cách tích cực</div>
+    <div class="vocab-grid">
+      <div class="vocab-card"><div class="vocab-jp">優しい</div><div class="vocab-read">やさしい</div><div class="vocab-vi">Hiền lành / tốt bụng</div></div>
+      <div class="vocab-card"><div class="vocab-jp">几帳面</div><div class="vocab-read">きちょうめん</div><div class="vocab-vi">Cẩn thận / ngăn nắp</div></div>
+      <div class="vocab-card"><div class="vocab-jp">素直</div><div class="vocab-read">すなお</div><div class="vocab-vi">Ngoan ngoãn / thẳng thắn</div></div>
+      <div class="vocab-card"><div class="vocab-jp">積極的</div><div class="vocab-read">せっきょくてき</div><div class="vocab-vi">Tích cực / chủ động</div></div>
+      <div class="vocab-card"><div class="vocab-jp">慎重</div><div class="vocab-read">しんちょう</div><div class="vocab-vi">Thận trọng</div></div>
+      <div class="vocab-card"><div class="vocab-jp">努力家</div><div class="vocab-read">どりょくか</div><div class="vocab-vi">Người chăm chỉ / nỗ lực</div></div>
+      <div class="vocab-card"><div class="vocab-jp">我慢強い</div><div class="vocab-read">がまんづよい</div><div class="vocab-vi">Nhẫn nại / kiên nhẫn</div></div>
+      <div class="vocab-card"><div class="vocab-jp">楽天的</div><div class="vocab-read">らくてんてき</div><div class="vocab-vi">Lạc quan</div></div>
+      <div class="vocab-card"><div class="vocab-jp">活発</div><div class="vocab-read">かっぱつ</div><div class="vocab-vi">Năng động / hoạt bát</div></div>
+      <div class="vocab-card"><div class="vocab-jp">思いやりがある</div><div class="vocab-read">おもいやりがある</div><div class="vocab-vi">Có sự đồng cảm / quan tâm người khác</div></div>
+      <div class="vocab-card"><div class="vocab-jp">責任感がある</div><div class="vocab-read">せきにんかんがある</div><div class="vocab-vi">Có trách nhiệm</div></div>
+      <div class="vocab-card"><div class="vocab-jp">しっかりしている</div><div class="vocab-read"></div><div class="vocab-vi">Chắc chắn / đáng tin cậy</div></div>
+    </div>
+  </div>
+
+  <div class="personality-section">
+    <div class="personality-label neutral">〜 Tính cách trung tính</div>
+    <div class="vocab-grid">
+      <div class="vocab-card"><div class="vocab-jp">恥ずかしがり屋</div><div class="vocab-read">はずかしがりや</div><div class="vocab-vi">Người hay xấu hổ / nhút nhát</div></div>
+      <div class="vocab-card"><div class="vocab-jp">大人しい</div><div class="vocab-read">おとなしい</div><div class="vocab-vi">Hiền / ít nói / trầm tính</div></div>
+      <div class="vocab-card"><div class="vocab-jp">負けず嫌い</div><div class="vocab-read">まけずぎらい</div><div class="vocab-vi">Không chịu thua / hiếu thắng</div></div>
+      <div class="vocab-card"><div class="vocab-jp">寂しがり屋</div><div class="vocab-read">さびしがりや</div><div class="vocab-vi">Người sợ cô đơn</div></div>
+      <div class="vocab-card"><div class="vocab-jp">のんびりしている</div><div class="vocab-read"></div><div class="vocab-vi">Thư thả / chậm rãi</div></div>
+      <div class="vocab-card"><div class="vocab-jp">クール</div><div class="vocab-read"></div><div class="vocab-vi">Lạnh lùng / điềm tĩnh</div></div>
+      <div class="vocab-card"><div class="vocab-jp">頑固</div><div class="vocab-read">がんこ</div><div class="vocab-vi">Bướng bỉnh / cứng đầu</div></div>
+      <div class="vocab-card"><div class="vocab-jp">消極的</div><div class="vocab-read">しょうきょくてき</div><div class="vocab-vi">Tiêu cực / thụ động</div></div>
+    </div>
+  </div>
+
+  <div class="personality-section">
+    <div class="personality-label negative">⚠ Tính cách tiêu cực</div>
+    <div class="vocab-grid">
+      <div class="vocab-card"><div class="vocab-jp">おせっかい</div><div class="vocab-read"></div><div class="vocab-vi">Hay xen vào / tọc mạch</div></div>
+      <div class="vocab-card"><div class="vocab-jp">神経質</div><div class="vocab-read">しんけいしつ</div><div class="vocab-vi">Nhạy cảm / hay lo lắng</div></div>
+      <div class="vocab-card"><div class="vocab-jp">わがまま</div><div class="vocab-read"></div><div class="vocab-vi">Ích kỷ / hay đòi hỏi</div></div>
+      <div class="vocab-card"><div class="vocab-jp">飽きっぽい</div><div class="vocab-read">あきっぽい</div><div class="vocab-vi">Hay chán / thiếu kiên định</div></div>
+      <div class="vocab-card"><div class="vocab-jp">おおざっぱ</div><div class="vocab-read"></div><div class="vocab-vi">Làm ẩu / không tỉ mỉ</div></div>
+      <div class="vocab-card"><div class="vocab-jp">せっかち</div><div class="vocab-read"></div><div class="vocab-vi">Hấp tấp / nóng vội</div></div>
+      <div class="vocab-card"><div class="vocab-jp">怒りっぽい</div><div class="vocab-read">おこりっぽい</div><div class="vocab-vi">Hay nổi cáu / nóng tính</div></div>
+      <div class="vocab-card"><div class="vocab-jp">おっちょこちょい</div><div class="vocab-read"></div><div class="vocab-vi">Hay vấp ngã / hay nhầm lẫn</div></div>
+      <div class="vocab-card"><div class="vocab-jp">悲観的</div><div class="vocab-read">ひかんてき</div><div class="vocab-vi">Bi quan</div></div>
+    </div>
+  </div>
+
+  </div><!-- end vocab-all -->
+  <div id="vocab-results" style="display:none">
+    <div class="vocab-grid" id="vocab-filtered"></div>
+    <p id="vocab-empty" style="display:none;color:var(--ink3);text-align:center;padding:2rem;font-size:0.9rem;">Không tìm thấy từ nào...</p>
+  </div>
+</div>
+
+<!-- ===== GRAMMAR TAB ===== -->
+<div id="tab-grammar" class="section">
+
+  <div class="part-heading" style="margin-top:1.5rem">
+    <span class="part-badge">Part 1</span>
+    <h2>掲示板 · Ngữ pháp</h2>
+    <div class="part-line"></div>
+  </div>
+
+  <!-- 1 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">1</div>
+      <div>
+        <div class="grammar-title">～において ／ ～における</div>
+        <div class="grammar-meaning">Ở / tại / vào / trong (địa điểm, thời gian, lĩnh vực)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">N</span> + において<br>
+        <span class="hl">N</span> + における + <span class="hl">N</span><br>
+        <span class="note">→ Dùng trong văn viết trang trọng, báo chí, công văn</span>
+      </div>
+      <div class="examples">
+        <div class="example">
+          <div class="example-num">① </div>
+          <div class="example-jp">ウェルカムパーティーはさくら公園において行われる予定です。</div>
+          <div class="example-vi">Tiệc chào mừng dự kiến được tổ chức tại công viên Sakura.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">② </div>
+          <div class="example-jp">就職活動において、まず重要なことは自分を知ることだ。</div>
+          <div class="example-vi">Trong việc tìm kiếm việc làm, điều quan trọng đầu tiên là phải biết bản thân mình.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">③ </div>
+          <div class="example-jp">海外における日本のアニメの評価は年々高まっている。</div>
+          <div class="example-vi">Sự đánh giá về anime Nhật Bản ở nước ngoài ngày càng cao lên.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">2</div>
+      <div>
+        <div class="grammar-title">～上（で）</div>
+        <div class="grammar-meaning">Sau khi (đã)... → Vế sau thường là chỉ thị, yêu cầu</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">V（た形）</span> + 上で<br>
+        <span class="hl">N（danh động từ）の</span> + 上で<br>
+        <span class="note">→ Vế sau: ください、お願いします... (chỉ thị hoặc sai khiến)</span>
+      </div>
+      <div class="examples">
+        <div class="example">
+          <div class="example-num">① </div>
+          <div class="example-jp">電話または協会窓口でお申し込みの上、当日参加費をお支払いください。</div>
+          <div class="example-vi">Vui lòng đăng ký qua điện thoại hoặc tại quầy hiệp hội, sau đó thanh toán phí tham dự vào ngày hôm đó.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">② </div>
+          <div class="example-jp">金額を確認した上で領収書にサインしてください。</div>
+          <div class="example-vi">Sau khi xác nhận số tiền, hãy ký vào biên lai.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">③ </div>
+          <div class="example-jp">何回もテストした上での完成品ですから自信があります。</div>
+          <div class="example-vi">Đây là sản phẩm hoàn thiện sau nhiều lần thử nghiệm nên tôi rất tự tin.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">3</div>
+      <div>
+        <div class="grammar-title">～てほしい ・ ～てもらいたい</div>
+        <div class="grammar-meaning">Muốn người khác làm / không làm V (cho mình)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">V（て形）</span> + ほしい　→ muốn người khác làm<br>
+        <span class="hl">V（ないで）</span> + ほしい　→ muốn người khác không làm<br>
+        <span class="note">Mở rộng: ～（さ）せてほしい / ～（さ）せてもらいたい / ～（さ）せていただきたい</span>
+      </div>
+      <div class="examples">
+        <div class="example">
+          <div class="example-num">① </div>
+          <div class="example-jp">このイベントにはたくさんの人に来てほしいです。</div>
+          <div class="example-vi">Tôi muốn thật nhiều người đến sự kiện này.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">② </div>
+          <div class="example-jp">国の料理を作ったので、クラスの友達にも食べてもらいたい。</div>
+          <div class="example-vi">Tôi đã nấu món ăn quê hương nên muốn các bạn trong lớp cũng ăn thử.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">③ </div>
+          <div class="example-jp example-dialog">
+            <div class="dialog-line"><span class="dialog-speaker">Ａ：</span><span class="dialog-text">明日から隣のビルの工事が始まるんだって。</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">Ｂ：</span><span class="dialog-text">ええ！あんまり大きな音を立てないでもらいたいね。</span></div>
+          </div>
+          <div class="example-vi">A: Nghe nói công trình tòa nhà bên cạnh bắt đầu từ ngày mai. B: Ôi! Mình muốn họ đừng gây tiếng ồn lớn quá.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">④ </div>
+          <div class="example-jp example-dialog">
+            <div class="dialog-line"><span class="dialog-speaker">Ａ：</span><span class="dialog-text">Ｂさん、このテーブルを運ぶのを手伝ってほしいんだけど。</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">Ｂ：</span><span class="dialog-text">うん、いいよ。どこに運んだらいい？</span></div>
+          </div>
+          <div class="example-vi">A: Bạn B ơi, tôi muốn bạn giúp chuyển cái bàn này. B: Được thôi. Chuyển đến đâu?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part-heading">
+    <span class="part-badge">Part 2</span>
+    <h2>誘う · Ngữ pháp</h2>
+    <div class="part-line"></div>
+  </div>
+
+  <!-- 4 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">4</div>
+      <div>
+        <div class="grammar-title">～よね</div>
+        <div class="grammar-meaning">Đúng không / Phải không / Phải chăng...</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="note">→ Kêu gọi sự đồng ý và xác nhận từ người nghe</span>
+      </div>
+      <div class="examples">
+        <div class="example">
+          <div class="example-num">① </div>
+          <div class="example-jp">確か、明日テストだよね。</div>
+          <div class="example-vi">Chắc ngày mai thi đúng không nhỉ?</div>
+        </div>
+        <div class="example">
+          <div class="example-num">② </div>
+          <div class="example-jp example-dialog">
+            <div class="dialog-line"><span class="dialog-speaker">アンナ：</span><span class="dialog-text">まるこさん、来週の飲み会には行けないんだよね。</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">まるこ：</span><span class="dialog-text">うん、残念だけど用事があるから。</span></div>
+          </div>
+          <div class="example-vi">Anna: Maruko, tuần sau bạn không đi tiệc được đúng không? Maruko: Ừ, tiếc thật nhưng mình có việc.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">③ </div>
+          <div class="example-jp">マリヤムさん、日本人と友達になりたいと言ってたよね。</div>
+          <div class="example-vi">Mariyam ơi, bạn có nói là muốn kết bạn với người Nhật đúng không?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">5</div>
+      <div>
+        <div class="grammar-title">～とか～とか</div>
+        <div class="grammar-meaning">Nào là...nào là / chẳng hạn như...như là...</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">N</span> + とか、<span class="hl">N</span> + とか<br>
+        <span class="hl">V（る形）</span> + とか、<span class="hl">V（る形）</span> + とか<br>
+        <span class="note">Ý nghĩa tương đương: ～や～など　/　～たり～たり</span>
+      </div>
+      <div class="examples">
+        <div class="example">
+          <div class="example-num">① </div>
+          <div class="example-jp example-dialog">
+            <div class="dialog-line"><span class="dialog-speaker">Ａ：</span><span class="dialog-text">Ｂさんは甘い物、好き？</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">Ｂ：</span><span class="dialog-text">うん、大好き。プリンとかゼリーとか甘くて柔らかいものが好き。</span></div>
+          </div>
+          <div class="example-vi">A: Bạn B có thích đồ ngọt không? B: Có! Mình thích những thứ ngọt mềm như bánh flan hay thạch.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">② </div>
+          <div class="example-jp example-dialog">
+            <div class="dialog-line"><span class="dialog-speaker">Ａ：</span><span class="dialog-text">夏休み、何するの？</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">Ｂ：</span><span class="dialog-text">何もしない。アルバイトをするだけ。</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">Ａ：</span><span class="dialog-text">えっ、海へ行くとか、美術館へ行くとかしてみたら？</span></div>
+          </div>
+          <div class="example-vi">A: Nghỉ hè bạn làm gì? B: Không làm gì, chỉ đi làm thêm. A: Vậy à, thử đi biển hay đi bảo tàng xem sao?</div>
+        </div>
+        <div class="example">
+          <div class="example-num">③ </div>
+          <div class="example-jp example-dialog">
+            <div class="dialog-line"><span class="dialog-speaker">Ａ：</span><span class="dialog-text">交流会ではどんなことするの？</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">Ｂ：</span><span class="dialog-text">一緒にバーベキューとかゲームとかをしたり、生活の役に立つ情報を教えてもらえたりするらしいよ。</span></div>
+          </div>
+          <div class="example-vi">A: Buổi giao lưu sẽ làm những gì? B: Nghe nói cùng nhau nướng BBQ rồi chơi game, và cũng được chia sẻ thông tin hữu ích trong cuộc sống.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">6</div>
+      <div>
+        <div class="grammar-title">～だけ ／ ～だけの</div>
+        <div class="grammar-meaning">Hết mức có thể... / Bao nhiêu cũng được...</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">V（可能形）</span> できる・やれる・頑張れる + だけ<br>
+        <span class="hl">Vたい</span>・ほしい + だけ<br>
+        <span class="hl">好きな</span> + だけ
+      </div>
+      <div class="examples">
+        <div class="example">
+          <div class="example-num">① </div>
+          <div class="example-jp">遠慮しないで、好きなだけ食べてください。</div>
+          <div class="example-vi">Đừng ngại, hãy ăn bao nhiêu tùy thích.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">② </div>
+          <div class="example-jp">試合に勝つために、やれるだけのことを全部しておきたいです。</div>
+          <div class="example-vi">Để giành chiến thắng, tôi muốn làm hết tất cả những gì có thể.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">③ </div>
+          <div class="example-jp">映画を見て泣きたいだけ泣いたら気分がすっきりした。</div>
+          <div class="example-vi">Xem phim xong khóc thỏa thuê thì cảm thấy sảng khoái hẳn.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">④ </div>
+          <div class="example-jp">できるだけ水を飲むようにしてください。</div>
+          <div class="example-vi">Hãy cố gắng uống nước càng nhiều càng tốt.</div>
+        </div>
+        <div class="example">
+          <div class="example-num">⑤ </div>
+          <div class="example-jp">定員があるから、行くならできるだけ早く申し込んだほうがいいらしいよ。</div>
+          <div class="example-vi">Vì có giới hạn số lượng nên nếu muốn đi thì nghe nói nên đăng ký sớm nhất có thể.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part-heading">
+    <span class="part-badge">Part 3</span>
+    <h2>天気予報 · Ngữ pháp</h2>
+    <div class="part-line"></div>
+  </div>
+
+  <!-- 7 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">7</div>
+      <div>
+        <div class="grammar-title">～でしょう ／ ～だろう</div>
+        <div class="grammar-meaning">Có lẽ / Chắc là... (phán đoán — 多分)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">V（普通形）</span> + でしょう<br>
+        <span class="hl">N・Aな・Aい</span> + でしょう<br>
+        <span class="note">だろう = dạng thường (casual) của でしょう</span>
+      </div>
+      <div class="examples">
+        <div class="example"><div class="example-num">① </div><div class="example-jp">明日は雨が降るでしょう。</div><div class="example-vi">Ngày mai có lẽ sẽ mưa.</div></div>
+        <div class="example"><div class="example-num">② </div><div class="example-jp">連休はどこも混んでいるでしょう。</div><div class="example-vi">Kỳ nghỉ lễ chỗ nào cũng đông hết.</div></div>
+        <div class="example"><div class="example-num">③ </div><div class="example-jp">公園で遊んでいる子供を迎えに来たのは、きっと父親だろう。</div><div class="example-vi">Người đến đón đứa trẻ đang chơi ở công viên chắc chắn là cha của nó.</div></div>
+        <div class="example"><div class="example-num">④ </div><div class="example-jp">彼は一人で住んでいるでしょう。</div><div class="example-vi">Anh ấy có lẽ đang sống một mình.</div></div>
+        <div class="example"><div class="example-num">⑤ </div><div class="example-jp">日本語は英語より難しいでしょう。</div><div class="example-vi">Tiếng Nhật có lẽ khó hơn tiếng Anh.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">8</div>
+      <div>
+        <div class="grammar-title">～から～にかけて</div>
+        <div class="grammar-meaning">Từ...đến... (phạm vi không gian / thời gian, không xác định chính xác)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">N</span> + から + <span class="hl">N</span> + にかけて<br>
+        <span class="note">Khác から～まで: にかけて không xác định điểm kết thúc cụ thể</span>
+      </div>
+      <div class="examples">
+        <div class="example"><div class="example-num">① </div><div class="example-jp">明日は東北地方から関東地方にかけて天気が崩れるでしょう。</div><div class="example-vi">Ngày mai thời tiết sẽ xấu đi từ vùng Tohoku đến vùng Kanto.</div></div>
+        <div class="example"><div class="example-num">② </div><div class="example-jp">９月から10月にかけて、各地で祭りが行われます。</div><div class="example-vi">Từ tháng 9 đến tháng 10, lễ hội được tổ chức ở nhiều nơi.</div></div>
+        <div class="example"><div class="example-num">③ </div><div class="example-jp">昨夜から今朝にかけて雨が降りました。</div><div class="example-vi">Mưa rơi từ tối qua đến sáng nay.</div></div>
+        <div class="example"><div class="example-num">④ </div><div class="example-jp">関東地方から東北地方にかけて、大きな地震があった。</div><div class="example-vi">Đã xảy ra động đất lớn từ vùng Kanto đến vùng Tohoku.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">9</div>
+      <div>
+        <div class="grammar-title">～と</div>
+        <div class="grammar-meaning">Hễ mà / Nếu mà ~ thì sẽ thường... (lẽ thường, tự nhiên)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">V（る/ない）普通形・現在形</span> + と、～<br>
+        <span class="hl">Aい</span> + と<br>
+        <span class="hl">N・Aな + だ</span> + と<br>
+        <span class="note">⚠ Vế sau KHÔNG dùng: ください、～なさい, ý chí (～よう), hay nguyện vọng</span><br>
+        <span class="note">V2 thường là: なります、思います</span>
+      </div>
+      <div class="examples">
+        <div class="example"><div class="example-num">① </div><div class="example-jp">ここに荷物を置くと、迷惑になるから、あそこに置こう。</div><div class="example-vi">Nếu để hành lý ở đây thì sẽ gây phiền hà, thôi để ở kia đi.</div></div>
+        <div class="example">
+          <div class="example-num">② </div>
+          <div class="example-jp example-dialog">
+            <div class="dialog-line"><span class="dialog-speaker">Ａ：</span><span class="dialog-text">お手伝いしましょうか。</span></div>
+            <div class="dialog-line"><span class="dialog-speaker">Ｂ：</span><span class="dialog-text">ありがとうございます。手伝っていただけると、助かります。</span></div>
+          </div>
+          <div class="example-vi">A: Để tôi giúp nhé. B: Cảm ơn. Nếu bạn giúp thì tôi đỡ lắm.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part-heading">
+    <span class="part-badge">Part 4</span>
+    <h2>自己紹介 · Ngữ pháp</h2>
+    <div class="part-line"></div>
+  </div>
+
+  <!-- 10 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">10</div>
+      <div>
+        <div class="grammar-title">～がきっかけで ／ ～をきっかけに</div>
+        <div class="grammar-meaning">Từ ~ là nguyên cớ / Nhân dịp... (bước ngoặt, nguyên nhân)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">N・Vたこと</span> + がきっかけで　<span class="note">→ Nguyên nhân</span><br>
+        <span class="hl">N</span> + をきっかけに（して / として）　<span class="note">→ Bước ngoặt</span><br>
+        <span class="note">Ý nghĩa: Bắt nguồn từ sự việc tình cờ, ngẫu nhiên, thường mang tính cá nhân</span>
+      </div>
+      <div class="examples">
+        <div class="example"><div class="example-num">① </div><div class="example-jp">彼女と別れたのをきっかけに毎日お酒を飲み始めた。</div><div class="example-vi">Lấy việc chia tay cô ấy làm cớ, anh ta bắt đầu uống rượu mỗi ngày.</div></div>
+        <div class="example"><div class="example-num">② </div><div class="example-jp">彼女は卒業をきっかけに、髪を切った。</div><div class="example-vi">Nhân dịp tốt nghiệp, cô ấy đã cắt tóc.</div></div>
+        <div class="example"><div class="example-num">③ </div><div class="example-jp">彼女は病気をきっかけにそのつまらない仕事を辞めた。</div><div class="example-vi">Lấy việc bệnh làm cớ, cô ấy đã nghỉ công việc nhàm chán đó.</div></div>
+        <div class="example"><div class="example-num">④ </div><div class="example-jp">日本のアニメがきっかけで日本語の勉強を始めました。</div><div class="example-vi">Tôi bắt đầu học tiếng Nhật nhờ anime Nhật Bản.</div></div>
+        <div class="example"><div class="example-num">⑤ </div><div class="example-jp">音楽がきっかけでイギリスに興味を持つようになりました。</div><div class="example-vi">Tôi bắt đầu quan tâm đến Anh nhờ âm nhạc.</div></div>
+        <div class="example"><div class="example-num">⑥ </div><div class="example-jp">オリンピックで試合を見たことがきっかけでテニスが好きになりました。</div><div class="example-vi">Tôi bắt đầu thích tennis từ khi xem trận đấu tại Olympic.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">11</div>
+      <div>
+        <div class="grammar-title">～っぽい</div>
+        <div class="grammar-meaning">Như là / Giống như / Dễ... hay... (so sánh hoặc xu hướng)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">Vます・N</span> + っぽい<br>
+        <span class="note">Gần giống N: 男っぽい、子供っぽい、安っぽい</span><br>
+        <span class="note">Màu sắc: 白っぽい、黒っぽい</span><br>
+        <span class="note">Chứa nhiều N: 水っぽい、油っぽい</span><br>
+        <span class="note">Dễ V: 疲れっぽい、怒りっぽい、飽きっぽい</span>
+      </div>
+      <div class="examples">
+        <div class="example"><div class="example-num">① </div><div class="example-jp">兄は気が短くて怒りっぽい性格です。</div><div class="example-vi">Anh tôi có tính nóng nảy, hay nổi cáu.</div></div>
+        <div class="example"><div class="example-num">② </div><div class="example-jp">田中さんはもう２４歳なのに、行動がずいぶん子供っぽい。</div><div class="example-vi">Anh Tanaka đã 24 tuổi rồi mà hành động vẫn còn trẻ con lắm.</div></div>
+        <div class="example"><div class="example-num">③ </div><div class="example-jp">彼はいつも黒っぽい服を着ている。</div><div class="example-vi">Anh ấy luôn mặc quần áo màu sẫm.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12 -->
+  <div class="grammar-card">
+    <div class="grammar-header">
+      <div class="grammar-num">12</div>
+      <div>
+        <div class="grammar-title">～Nでも</div>
+        <div class="grammar-meaning">Đến cả N cũng... / Chẳng hạn như là... (đề xuất nhẹ nhàng)</div>
+      </div>
+    </div>
+    <div class="grammar-body">
+      <div class="struct-box">
+        <span class="hl">N</span> + でも<br>
+        <span class="note">→ Dùng khi đề xuất một cái gì đó như ví dụ, không nhất thiết phải là thứ đó</span>
+      </div>
+      <div class="examples">
+        <div class="example"><div class="example-num">③ </div><div class="example-jp">今晩暇だったら、映画でも見ない？</div><div class="example-vi">Tối nay rảnh thì đi xem phim hay gì đó không?</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== SUMMARY TAB ===== -->
+<div id="tab-summary" class="section">
+  <div style="margin-top:1.5rem">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+      <table class="summary-table">
+        <thead>
+          <tr>
+            <th style="width:40px">#</th>
+            <th style="width:220px">Mẫu câu</th>
+            <th>Nghĩa</th>
+            <th style="width:80px">Phần</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td class="jp">～において／～における</td><td>Ở / tại / vào / trong (trang trọng)</td><td>Part 1</td></tr>
+          <tr><td>2</td><td class="jp">～上（で）</td><td>Sau khi (đã)... → vế sau là chỉ thị</td><td>Part 1</td></tr>
+          <tr><td>3</td><td class="jp">～てほしい／～てもらいたい</td><td>Muốn người khác làm / không làm V</td><td>Part 1</td></tr>
+          <tr><td>4</td><td class="jp">～よね</td><td>Đúng không / phải không (xác nhận)</td><td>Part 2</td></tr>
+          <tr><td>5</td><td class="jp">～とか～とか</td><td>Nào là...nào là / chẳng hạn như</td><td>Part 2</td></tr>
+          <tr><td>6</td><td class="jp">～だけ／～だけの</td><td>Hết mức có thể / bao nhiêu cũng được</td><td>Part 2</td></tr>
+          <tr><td>7</td><td class="jp">～でしょう／～だろう</td><td>Có lẽ / chắc là (phán đoán)</td><td>Part 3</td></tr>
+          <tr><td>8</td><td class="jp">～から～にかけて</td><td>Từ...đến... (phạm vi không xác định)</td><td>Part 3</td></tr>
+          <tr><td>9</td><td class="jp">～と</td><td>Hễ mà / nếu mà ~ thì sẽ (lẽ thường)</td><td>Part 3</td></tr>
+          <tr><td>10</td><td class="jp">～がきっかけで／をきっかけに</td><td>Nhân dịp / từ cớ đó... (bước ngoặt)</td><td>Part 4</td></tr>
+          <tr><td>11</td><td class="jp">～っぽい</td><td>Như là / giống / dễ... hay...</td><td>Part 4</td></tr>
+          <tr><td>12</td><td class="jp">～Nでも</td><td>Đến cả N cũng / chẳng hạn như (đề xuất)</td><td>Part 4</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="part-heading" style="margin-top:2rem">
+    <div class="part-line"></div>
+    <h2 style="white-space:nowrap;font-size:1rem;color:var(--ink3)">Từ vựng tính cách nhanh</h2>
+    <div class="part-line"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem">
+      <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#2e7d32;font-weight:500;margin-bottom:0.75rem;">✨ Tích cực</div>
+      <div style="font-size:0.85rem;color:var(--ink2);line-height:2;font-family:'Noto Sans JP',sans-serif">
+        優しい・几帳面・素直<br>積極的・慎重・努力家<br>我慢強い・楽天的・活発<br>思いやりがある・責任感がある<br>しっかりしている
+      </div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem">
+      <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#c62828;font-weight:500;margin-bottom:0.75rem;">⚠ Tiêu cực</div>
+      <div style="font-size:0.85rem;color:var(--ink2);line-height:2;font-family:'Noto Sans JP',sans-serif">
+        おせっかい・神経質・わがまま<br>飽きっぽい・おおざっぱ・せっかち<br>気が短い・怒りっぽい<br>おっちょこちょい・悲観的<br>頑固・消極的
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== TENSES TAB ===== -->
+<div id="tab-tenses" class="section">
+
+<div style="margin-top:1.5rem">
+
+<!-- SEARCH -->
+<div class="search-wrap">
+  <span class="search-icon">🔍</span>
+  <input type="text" id="tense-search" placeholder="Tìm theo tên thì, mẫu câu hoặc ý nghĩa..." oninput="filterTenses()">
+</div>
+
+<div id="tenses-all">
+
+<!-- GROUP 1: THÌ CƠ BẢN -->
+<div class="part-heading">
+  <span class="part-badge">N5</span>
+  <h2>Thì cơ bản — Hiện tại / Quá khứ / Phủ định</h2>
+  <div class="part-line"></div>
+</div>
+
+<div class="grammar-card" data-tags="hiện tại phủ định ます masu n5">
+  <div class="grammar-header">
+    <div class="grammar-num">1</div>
+    <div>
+      <div class="grammar-title">～ます／～ません (Thể ます)</div>
+      <div class="grammar-meaning">Hiện tại / tương lai — Khẳng định &amp; Phủ định (lịch sự)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（ます形）</span> → 食べます、飲みます、行きます<br>
+      <span class="hl">V（ません）</span> → 食べません、飲みません<br>
+      <span class="note">Nhóm 1 (う動詞): く→き、ぐ→ぎ、す→し、つ→ち、ぬ→に、む→み、う→い、る→り、ぶ→び</span><br>
+      <span class="note">Nhóm 2 (る動詞): bỏ る → thêm ます</span><br>
+      <span class="note">Nhóm 3: する→します、くる→きます</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">毎日日本語を勉強します。</div><div class="example-vi">Mỗi ngày tôi học tiếng Nhật.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">肉は食べません。</div><div class="example-vi">Tôi không ăn thịt.</div></div>
+      <div class="example"><div class="example-num">③ </div><div class="example-jp">明日学校へ行きます。</div><div class="example-vi">Ngày mai tôi sẽ đến trường.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="quá khứ ました ませんでした n5">
+  <div class="grammar-header">
+    <div class="grammar-num">2</div>
+    <div>
+      <div class="grammar-title">～ました／～ませんでした</div>
+      <div class="grammar-meaning">Quá khứ — Khẳng định &amp; Phủ định (lịch sự)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（ます形）</span> + ました → 食べました<br>
+      <span class="hl">V（ます形）</span> + ませんでした → 食べませんでした<br>
+      <span class="note">→ Hành động đã xảy ra / không xảy ra trong quá khứ</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">昨日映画を見ました。</div><div class="example-vi">Hôm qua tôi đã xem phim.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">朝ごはんを食べませんでした。</div><div class="example-vi">Tôi đã không ăn sáng.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="て形 te form nối câu n5">
+  <div class="grammar-header">
+    <div class="grammar-num">3</div>
+    <div>
+      <div class="grammar-title">～て形 (Thể て)</div>
+      <div class="grammar-meaning">Nối động từ, diễn đạt thứ tự hành động, nguyên nhân nhẹ</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">Nhóm 1:</span> く→いて、ぐ→いで、す→して、つ/る/う→って、ぬ/む/ぶ→んで<br>
+      <span class="hl">Nhóm 2:</span> る → て　(食べる→食べて)<br>
+      <span class="hl">Nhóm 3:</span> する→して、くる→きて<br>
+      <span class="note">⚠ Ngoại lệ: 行く → 行って</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">シャワーを浴びて、朝ごはんを食べます。</div><div class="example-vi">Tắm xong rồi ăn sáng.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">電車に乗って学校へ行きます。</div><div class="example-vi">Đi tàu đến trường.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- GROUP 2: N5 QUAN TRỌNG -->
+<div class="part-heading">
+  <span class="part-badge">N5</span>
+  <h2>Các mẫu quan trọng N5</h2>
+  <div class="part-line"></div>
+</div>
+
+<div class="grammar-card" data-tags="ている tiếp diễn trạng thái n5">
+  <div class="grammar-header">
+    <div class="grammar-num">4</div>
+    <div>
+      <div class="grammar-title">～ている</div>
+      <div class="grammar-meaning">Đang làm (tiếp diễn) / Trạng thái kết quả còn tiếp tục</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（て形）</span> + いる<br>
+      <span class="note">Tiếp diễn: 食べている (đang ăn), 勉強している (đang học)</span><br>
+      <span class="note">Trạng thái: 結婚している (đã kết hôn → đang có gia đình), 知っている (đã biết)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">今、音楽を聞いています。</div><div class="example-vi">Bây giờ tôi đang nghe nhạc.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">彼女は東京に住んでいます。</div><div class="example-vi">Cô ấy đang sống ở Tokyo.</div></div>
+      <div class="example"><div class="example-num">③ </div><div class="example-jp">田中さんを知っていますか。</div><div class="example-vi">Bạn có biết anh Tanaka không?</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="たい muốn nguyện vọng n5">
+  <div class="grammar-header">
+    <div class="grammar-num">5</div>
+    <div>
+      <div class="grammar-title">～たい</div>
+      <div class="grammar-meaning">Muốn làm gì (nguyện vọng của bản thân)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（ます形）</span> + たい → chia như tính từ い<br>
+      <span class="note">Phủ định: たくない　/ Quá khứ: たかった / Phủ định quá khứ: たくなかった</span><br>
+      <span class="note">⚠ Chỉ dùng cho nguyện vọng của bản thân (ngôi 1)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">日本へ行きたいです。</div><div class="example-vi">Tôi muốn đi Nhật.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-num">② </div><div class="example-jp">今日は何もしたくない。</div><div class="example-vi">Hôm nay tôi không muốn làm gì cả.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="ないで không làm phủ định n5">
+  <div class="grammar-header">
+    <div class="grammar-num">6</div>
+    <div>
+      <div class="grammar-title">～ないで</div>
+      <div class="grammar-meaning">Không làm V mà... / Đừng làm V</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（ない形）</span> + で<br>
+      <span class="note">→ Nối 2 vế: không làm A mà làm B</span><br>
+      <span class="note">→ Mệnh lệnh nhẹ: ～ないでください (xin đừng...)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">朝ごはんを食べないで学校へ行きました。</div><div class="example-vi">Không ăn sáng mà đi học.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">ここで写真を撮らないでください。</div><div class="example-vi">Xin đừng chụp ảnh ở đây.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- GROUP 3: N4 -->
+<div class="part-heading">
+  <span class="part-badge">N4</span>
+  <h2>Các mẫu quan trọng N4</h2>
+  <div class="part-line"></div>
+</div>
+
+<div class="grammar-card" data-tags="た形 quá khứ thể thường n4">
+  <div class="grammar-header">
+    <div class="grammar-num">7</div>
+    <div>
+      <div class="grammar-title">～た形 / 普通形 (Thể thường)</div>
+      <div class="grammar-meaning">Quá khứ thể thường — dùng trong hội thoại thân mật &amp; mệnh đề phụ</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">Cách chia:</span> giống thể て nhưng đổi て→た、で→だ<br>
+      食べる→食べた、飲む→飲んだ、行く→行った、する→した<br>
+      <span class="note">Dùng trước: と思う、と言う、後で、ことがある、ことにする...</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">昨日映画を見た。</div><div class="example-vi">Hôm qua tôi xem phim rồi.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">宿題を終わった後で、ゲームをした。</div><div class="example-vi">Sau khi xong bài tập thì chơi game.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="ことがある kinh nghiệm đã từng n4">
+  <div class="grammar-header">
+    <div class="grammar-num">8</div>
+    <div>
+      <div class="grammar-title">～たことがある／ない</div>
+      <div class="grammar-meaning">Đã từng làm / Chưa từng làm (kinh nghiệm)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（た形）</span> + ことがある<br>
+      <span class="hl">V（た形）</span> + ことがない<br>
+      <span class="note">→ Diễn tả kinh nghiệm trong cuộc đời, không liên quan thời điểm cụ thể</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">富士山に登ったことがあります。</div><div class="example-vi">Tôi đã từng leo núi Phú Sĩ.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">納豆を食べたことがありません。</div><div class="example-vi">Tôi chưa từng ăn natto.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="ている結果 trạng thái kết quả n4">
+  <div class="grammar-header">
+    <div class="grammar-num">9</div>
+    <div>
+      <div class="grammar-title">～てある</div>
+      <div class="grammar-meaning">Trạng thái kết quả của hành động có chủ ý (ai đó đã làm sẵn)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（他動詞・て形）</span> + ある<br>
+      <span class="note">Khác ている: てある = ai đó đã cố ý làm → kết quả còn đó</span><br>
+      <span class="note">窓が開いている (cửa sổ đang mở — tự nhiên) vs 窓が開けてある (cửa sổ được mở sẵn — có chủ ý)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">黒板に名前が書いてあります。</div><div class="example-vi">Tên đã được viết sẵn trên bảng.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">冷蔵庫にビールが入れてある。</div><div class="example-vi">Bia đã được để sẵn trong tủ lạnh.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="ておく chuẩn bị sẵn n4">
+  <div class="grammar-header">
+    <div class="grammar-num">10</div>
+    <div>
+      <div class="grammar-title">～ておく</div>
+      <div class="grammar-meaning">Làm trước / Làm sẵn (chuẩn bị cho tương lai)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（て形）</span> + おく<br>
+      <span class="note">口語: ～とく (食べておく → 食べとく)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">旅行の前にホテルを予約しておきます。</div><div class="example-vi">Trước chuyến đi sẽ đặt khách sạn trước.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">テストのために単語を覚えておいた。</div><div class="example-vi">Đã học thuộc từ vựng trước để chuẩn bị cho bài kiểm tra.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="てしまう lỡ xong hẳn tiếc n4">
+  <div class="grammar-header">
+    <div class="grammar-num">11</div>
+    <div>
+      <div class="grammar-title">～てしまう</div>
+      <div class="grammar-meaning">Làm xong hẳn / Lỡ làm rồi (hối tiếc hoặc hoàn tất)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（て形）</span> + しまう<br>
+      <span class="note">口語: ～ちゃう (食べてしまう → 食べちゃう)、～じゃう (飲んでしまう → 飲んじゃう)</span><br>
+      <span class="note">→ Hoàn tất: 宿題をしてしまった (làm bài xong rồi)</span><br>
+      <span class="note">→ Hối tiếc: 財布を忘れてしまった (lỡ quên ví mất rồi)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">ケーキを全部食べてしまいました。</div><div class="example-vi">Đã ăn hết cả cái bánh rồi.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">大切な資料をなくしてしまった。</div><div class="example-vi">Lỡ đánh mất tài liệu quan trọng mất rồi.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="ようとする chuẩn bị sắp n4">
+  <div class="grammar-header">
+    <div class="grammar-num">12</div>
+    <div>
+      <div class="grammar-title">～ようとする</div>
+      <div class="grammar-meaning">Sắp / Cố gắng làm V (hành động vừa bắt đầu hoặc có ý định)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（意向形）</span> + とする<br>
+      <span class="note">意向形: 食べる→食べよう、行く→行こう、する→しよう、くる→こよう</span><br>
+      <span class="note">→ Sắp làm: 出かけようとしたとき... (đúng lúc sắp ra ngoài thì...)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">寝ようとしたとき、電話が鳴った。</div><div class="example-vi">Đúng lúc sắp ngủ thì điện thoại reo.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">できるだけ野菜を食べようとしています。</div><div class="example-vi">Tôi đang cố gắng ăn rau nhiều hơn.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="ようになる thay đổi trở nên n4">
+  <div class="grammar-header">
+    <div class="grammar-num">13</div>
+    <div>
+      <div class="grammar-title">～ようになる</div>
+      <div class="grammar-meaning">Trở nên có thể / Bắt đầu có thói quen (thay đổi dần dần)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（る形）</span> + ようになる → bắt đầu làm được / có thói quen<br>
+      <span class="hl">V（可能形）</span> + ようになる → trở nên có thể làm<br>
+      <span class="hl">V（ない形）</span> + ようになる → trở nên không làm nữa
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">練習して、泳げるようになりました。</div><div class="example-vi">Luyện tập rồi tôi đã bơi được.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">日本に来てから、毎日日本語を話すようになった。</div><div class="example-vi">Từ khi đến Nhật, tôi bắt đầu nói tiếng Nhật mỗi ngày.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="ことにする quyết định n4">
+  <div class="grammar-header">
+    <div class="grammar-num">14</div>
+    <div>
+      <div class="grammar-title">～ことにする／～ことになる</div>
+      <div class="grammar-meaning">Quyết định làm (chủ ý) / Được quyết định / Thành ra (khách quan)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（る/ない）</span> + ことにする　→ Tự mình quyết định<br>
+      <span class="hl">V（る/ない）</span> + ことになる　→ Hoàn cảnh / người khác quyết định<br>
+      <span class="hl">V + ことにしている</span>　→ Thói quen tự đặt ra cho mình
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">毎朝走ることにしました。</div><div class="example-vi">Tôi đã quyết định chạy bộ mỗi sáng.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">来月、大阪に転勤することになりました。</div><div class="example-vi">Tháng sau tôi sẽ chuyển công tác đến Osaka (được quyết định).</div></div>
+      <div class="example"><div class="example-num">③ </div><div class="example-jp">夜は甘いものを食べないことにしている。</div><div class="example-vi">Tôi tự đặt ra quy tắc không ăn ngọt ban đêm.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="受身 bị động passive n4">
+  <div class="grammar-header">
+    <div class="grammar-num">15</div>
+    <div>
+      <div class="grammar-title">受身形 — Thể bị động (Passive)</div>
+      <div class="grammar-meaning">Bị / được làm gì (chủ thể chịu tác động)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">Nhóm 1:</span> う段 → あ段 + れる　(書く→書かれる、飲む→飲まれる)<br>
+      <span class="hl">Nhóm 2:</span> る → られる　(食べる→食べられる)<br>
+      <span class="hl">Nhóm 3:</span> する→される、くる→こられる<br>
+      <span class="note">→ Bị: 先生に叱られた (bị thầy mắng)</span><br>
+      <span class="note">→ Được: 社長に褒められた (được giám đốc khen)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">弟に日記を読まれてしまった。</div><div class="example-vi">Bị em đọc trộm nhật ký mất rồi.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">この小説は世界中で読まれています。</div><div class="example-vi">Cuốn tiểu thuyết này được đọc trên toàn thế giới.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="使役 sai khiến causative n4">
+  <div class="grammar-header">
+    <div class="grammar-num">16</div>
+    <div>
+      <div class="grammar-title">使役形 — Thể sai khiến (Causative)</div>
+      <div class="grammar-meaning">Khiến / bắt / cho phép ai làm gì</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">Nhóm 1:</span> う段 → あ段 + せる　(書く→書かせる、飲む→飲ませる)<br>
+      <span class="hl">Nhóm 2:</span> る → させる　(食べる→食べさせる)<br>
+      <span class="hl">Nhóm 3:</span> する→させる、くる→こさせる<br>
+      <span class="note">→ Bắt buộc: 子供に野菜を食べさせる (bắt con ăn rau)</span><br>
+      <span class="note">→ Cho phép: 好きなものを食べさせる (cho ăn thứ mình thích)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">母は私に毎日ピアノを練習させます。</div><div class="example-vi">Mẹ bắt tôi luyện đàn piano mỗi ngày.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">部長は部下に残業させました。</div><div class="example-vi">Trưởng phòng bắt nhân viên làm thêm giờ.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="条件 điều kiện ば たら なら n4">
+  <div class="grammar-header">
+    <div class="grammar-num">17</div>
+    <div>
+      <div class="grammar-title">条件形 — Các thể điều kiện</div>
+      <div class="grammar-meaning">Nếu ~ thì: ば / たら / なら — mỗi loại có sắc thái khác nhau</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">～ば：</span> V う段→え段+ば / Aい→ければ / Aな・N→なら(ば)<br>
+      <span class="note">→ Điều kiện giả định, tự nhiên, lời khuyên</span><br>
+      <span class="hl">～たら：</span> V（た形）+ ら<br>
+      <span class="note">→ Sau khi / Nếu ~ thì (linh hoạt nhất, dùng được nhiều nhất)</span><br>
+      <span class="hl">～なら：</span> N / V（普通形）+ なら<br>
+      <span class="note">→ Nếu như đó là... (dựa vào thông tin người kia vừa nói)</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">安ければ買います。</div><div class="example-vi">Nếu rẻ thì mua. (ば)</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">家に帰ったら、電話してください。</div><div class="example-vi">Về đến nhà thì gọi điện cho tôi nhé. (たら)</div></div>
+      <div class="example"><div class="example-num">③ </div><div class="example-jp">日本へ行くなら、京都がおすすめです。</div><div class="example-vi">Nếu bạn đi Nhật thì Kyoto rất đáng đến. (なら)</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="grammar-card" data-tags="させていただく xin phép lịch sự n4">
+  <div class="grammar-header">
+    <div class="grammar-num">18</div>
+    <div>
+      <div class="grammar-title">～させていただく</div>
+      <div class="grammar-meaning">Xin được phép làm V (cực kỳ lịch sự)</div>
+    </div>
+  </div>
+  <div class="grammar-body">
+    <div class="struct-box">
+      <span class="hl">V（使役形）</span> + ていただく<br>
+      <span class="note">= させてもらう (bình thường) → させていただく (trang trọng hơn)</span><br>
+      <span class="note">→ Dùng nhiều trong môi trường công sở, phát biểu, thư từ</span>
+    </div>
+    <div class="examples">
+      <div class="example"><div class="example-num">① </div><div class="example-jp">では、発表させていただきます。</div><div class="example-vi">Vậy thì xin phép tôi được trình bày.</div></div>
+      <div class="example"><div class="example-num">② </div><div class="example-jp">本日はお休みをいただき、失礼させていただきます。</div><div class="example-vi">Hôm nay xin phép nghỉ, tôi thành thật xin lỗi.</div></div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end tenses-all -->
+
+<div id="tenses-results" style="display:none">
+  <div id="tenses-filtered"></div>
+  <p id="tenses-empty" style="display:none;color:var(--ink3);text-align:center;padding:2rem;font-size:0.9rem;">Không tìm thấy...</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- ===== KANJI TAB ===== -->
+<div id="tab-kanji" class="section">
+<div style="margin-top:1.5rem">
+
+  <div class="part-heading">
+    <span class="part-badge">第1課</span>
+    <h2>漢字 · Kanji</h2>
+    <div class="part-line"></div>
+  </div>
+
+  <div class="kanji-grid">
+
+    <!-- 参 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">参</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Tham</div>
+          <div class="kanji-num-badge">Kanji 01</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">セン</span>
+        </div>
+        <div class="reading-group">
+          <span class="reading-label kun">KUN</span>
+          <span class="reading-val">まい・る</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">参加</span><span class="compound-read">さんか</span><span class="compound-vi">Tham gia</span></div>
+        <div class="compound-item"><span class="compound-jp">参考</span><span class="compound-read">さんこう</span><span class="compound-vi">Tham khảo</span></div>
+        <div class="compound-item"><span class="compound-jp">持参</span><span class="compound-read">じさん</span><span class="compound-vi">Mang theo</span></div>
+      </div>
+    </div>
+
+    <!-- 加 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">加</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Gia</div>
+          <div class="kanji-num-badge">Kanji 02</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">カ</span>
+        </div>
+        <div class="reading-group">
+          <span class="reading-label kun">KUN</span>
+          <span class="reading-val">くわ・わる・える</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">参加</span><span class="compound-read">さんか</span><span class="compound-vi">Tham gia</span></div>
+        <div class="compound-item"><span class="compound-jp">加工</span><span class="compound-read">かこう</span><span class="compound-vi">Gia công</span></div>
+        <div class="compound-item"><span class="compound-jp">加入</span><span class="compound-read">かにゅう</span><span class="compound-vi">Gia nhập</span></div>
+      </div>
+    </div>
+
+    <!-- 流 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">流</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Lưu</div>
+          <div class="kanji-num-badge">Kanji 03</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">リュウ</span>
+        </div>
+        <div class="reading-group">
+          <span class="reading-label kun">KUN</span>
+          <span class="reading-val">なが・れる・す</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">流行</span><span class="compound-read">りゅうこう</span><span class="compound-vi">Lưu hành / Thịnh hành</span></div>
+        <div class="compound-item"><span class="compound-jp">流通</span><span class="compound-read">りゅうつう</span><span class="compound-vi">Lưu thông</span></div>
+        <div class="compound-item"><span class="compound-jp">交流</span><span class="compound-read">こうりゅう</span><span class="compound-vi">Giao lưu</span></div>
+      </div>
+    </div>
+
+    <!-- 協 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">協</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Hiệp</div>
+          <div class="kanji-num-badge">Kanji 04</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">キョウ</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">協力</span><span class="compound-read">きょうりょく</span><span class="compound-vi">Hợp tác</span></div>
+        <div class="compound-item"><span class="compound-jp">協定</span><span class="compound-read">きょうてい</span><span class="compound-vi">Thỏa thuận</span></div>
+        <div class="compound-item"><span class="compound-jp">協約</span><span class="compound-read">きょうやく</span><span class="compound-vi">Hiệp định / Hiệp ước</span></div>
+      </div>
+    </div>
+
+    <!-- 費 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">費</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Phí</div>
+          <div class="kanji-num-badge">Kanji 05</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">ヒ</span>
+        </div>
+        <div class="reading-group">
+          <span class="reading-label kun">KUN</span>
+          <span class="reading-val">つい・やす</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">費用</span><span class="compound-read">ひよう</span><span class="compound-vi">Chi phí</span></div>
+        <div class="compound-item"><span class="compound-jp">学費</span><span class="compound-read">がくひ</span><span class="compound-vi">Học phí</span></div>
+        <div class="compound-item"><span class="compound-jp">会費</span><span class="compound-read">かいひ</span><span class="compound-vi">Phí thành viên</span></div>
+        <div class="compound-item"><span class="compound-jp">消費者</span><span class="compound-read">しょうひしゃ</span><span class="compound-vi">Người tiêu dùng</span></div>
+      </div>
+    </div>
+
+    <!-- 報 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">報</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Báo</div>
+          <div class="kanji-num-badge">Kanji 06</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">ホウ</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">報道</span><span class="compound-read">ほうどう</span><span class="compound-vi">Tin tức / Phóng sự</span></div>
+        <div class="compound-item"><span class="compound-jp">報告</span><span class="compound-read">ほうこく</span><span class="compound-vi">Báo cáo</span></div>
+        <div class="compound-item"><span class="compound-jp">情報</span><span class="compound-read">じょうほう</span><span class="compound-vi">Thông tin</span></div>
+      </div>
+    </div>
+
+    <!-- 覚 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">覚</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Giác</div>
+          <div class="kanji-num-badge">Kanji 07</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">カク</span>
+        </div>
+        <div class="reading-group">
+          <span class="reading-label kun">KUN</span>
+          <span class="reading-val">おぼ・える</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">覚書</span><span class="compound-read">おぼえがき</span><span class="compound-vi">Ghi chú / Biên bản</span></div>
+        <div class="compound-item"><span class="compound-jp">味覚</span><span class="compound-read">みかく</span><span class="compound-vi">Vị giác</span></div>
+        <div class="compound-item"><span class="compound-jp">自覚</span><span class="compound-read">じかく</span><span class="compound-vi">Tự ý thức</span></div>
+      </div>
+    </div>
+
+    <!-- 就 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">就</div>
+        <div class="kanji-meta">
+          <div class="kanji-vi">Tựu</div>
+          <div class="kanji-num-badge">Kanji 08</div>
+        </div>
+      </div>
+      <div class="kanji-readings">
+        <div class="reading-group">
+          <span class="reading-label on">ON</span>
+          <span class="reading-val">シュウ</span>
+        </div>
+        <div class="reading-group">
+          <span class="reading-label kun">KUN</span>
+          <span class="reading-val">つ・く</span>
+        </div>
+      </div>
+      <div class="kanji-compounds">
+        <div class="compound-item"><span class="compound-jp">就職</span><span class="compound-read">しゅうしょく</span><span class="compound-vi">Tìm / Nhận việc làm</span></div>
+        <div class="compound-item"><span class="compound-jp">就学</span><span class="compound-read">しゅうがく</span><span class="compound-vi">Nhập học</span></div>
+        <div class="compound-item"><span class="compound-jp">就業</span><span class="compound-read">しゅうぎょう</span><span class="compound-vi">Việc làm / Lao động</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
